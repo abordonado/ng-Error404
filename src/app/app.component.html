@@ -1,3 +1,13 @@
 <h1>
   {{title}}
 </h1>
+
+<div>
+  <ul>
+    <li><a [routerLink]="['/page1']">Page1</a></li>
+    <li><a [routerLink]="['/page2']">Page2</a></li>
+    <li><a [routerLink]="['/page3']">Page3</a></li>
+  </ul>
+</div>
+
+<router-outlet></router-outlet>

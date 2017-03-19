@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { Page1Component } from './page1/page1.component';
 import { Page2Component } from './page2/page2.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import {RouterModule} from "@angular/router";
+import {appRoutes} from "./app-routing.module";
 
 @NgModule({
   declarations: [
@@ -18,7 +20,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
